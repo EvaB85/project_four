@@ -1,15 +1,25 @@
 import React, {Component} from 'react';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 class Calendar extends Component {
   render() {
     return (
       <div className="Calendar">
-        <h1>Calendar Heading {this.props.name}</h1>
-        <ul>
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-        </ul>
+        <div>
+          <Paper className="paper">
+    				<h3>ONE Calendar</h3>
+    			</Paper>
+        </div>
+        <div className="root">
+          <Grid container >
+            <Grid item xs={12}>
+              <p className="grid" >GRID in Calendar</p>
+            </Grid>
+          </Grid>
+          <Grid container spacing={24} className="name">
+          </Grid>
+        </div>
       </div>
     );
   }
