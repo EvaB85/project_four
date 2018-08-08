@@ -1,31 +1,22 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import logo from './logo.svg';
+import './App.css';
 import Goals from './Goals';
 import Calendar from './Calendar';
-import Home from './Home';
-import User from './User';
-import './App.css';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import Navbar from './Navbar';
-// import Login from './Login';
+import Menubar from './Menubar.js';
+
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Router>
-          <div>
-            <Navbar />
-            <div className="App">
-              <Route exact path="/" render={() => <Home /> } />
-              <Route path="/goals" render={() => <Goals /> } />
-              {/* <Route path="/login" render={() => <Login /> } /> */}
-              <Route path="/calendar" render={() => <Calendar /> } />
-            </div>
-          </div>
-        </Router>
+      <div className="App">
+        <header className="App-header">
+        {/* <Menubar /> */}
+          <h1 className="App-title">My OnTrack Calendar App</h1>
+        </header>
+        <p className="App-intro"></p>
+        <Goals />
+        <Calendar />
       </div>
     );
   }
