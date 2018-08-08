@@ -21,17 +21,6 @@ class Calendar extends Component {
           </Grid>
           <Grid container spacing={24} className="name">
           </Grid>
-
-          <button class="mdc-fab" aria-label="Favorite">
-            <span class="mdc-fab__icon material-icons">favorite</span>
-          </button>
-
-          <button class="mdc-fab mdc-fab--extended">
-            <span class="material-icons mdc-fab__icon">add</span>
-            <span class="mdc-fab__label">Create</span>
-          </button>
-
-
         </div>
       </div>
     );
