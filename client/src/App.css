@@ -1,16 +1,35 @@
 body {
   background: #5298d1;
 }
-/* added */
+/* ADDED */
 .my-card {
   height: 350px;
   width: 350px;
 }
 
 .my-card__media {
-  /* background-image: url(""); */
+  background-image: url("./Calendar.png");
+  height: 825px;
+  width: 825px;
 }
-/* added  */
+
+/* #card-title {
+
+} */
+
+
+
+
+
+#tracker-box {
+  background: #5298d1;
+  height: 850px;
+  width: 850px;
+  position: relative;
+  align-items: center;
+}
+
+/* ADDED */
 
 .App {
   text-align: center;

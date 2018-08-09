@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
