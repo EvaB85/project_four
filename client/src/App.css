@@ -13,13 +13,9 @@ body {
   width: 825px;
 }
 
-/* #card-title {
-
-} */
-
-
-
-
+#button-login {
+  width: 100%;
+}
 
 #tracker-box {
   background: #5298d1;

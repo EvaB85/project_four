@@ -30,7 +30,7 @@ class Calendar extends Component {
                 </div>
               </div>
             </div>
-            
+
     			</Paper>
         </div>
         <div className="root">
