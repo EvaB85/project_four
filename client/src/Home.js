@@ -1,22 +1,20 @@
 import React, {Component} from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import {MDCRipple} from '@material/ripple';
 
-
-class Calendar extends Component {
+class Home extends Component {
   render() {
     return (
-      <div className="Calendar">
+      <div className="Home">
         <div>
           <Paper className="paper">
-    				<h3>ONE Calendar</h3>
+    				<h3>ONE Home</h3>
     			</Paper>
         </div>
         <div className="root">
           <Grid container >
             <Grid item xs={12}>
-              <p className="grid" >GRID in Calendar</p>
+              <p className="grid" >GRID in Home</p>
             </Grid>
           </Grid>
           <Grid container spacing={24} className="name">
@@ -27,4 +25,4 @@ class Calendar extends Component {
   }
 }
 
-export default Calendar;
+export default Home;
