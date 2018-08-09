@@ -12,34 +12,26 @@ import Home from './Home';
 import Navbar from './Navbar';
 import User from './User';
 // import Login from './Login';
+import GoalTracker from './GoalTracker';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-        {/* <Menubar /> */}
-          <h1 className="App-title">SeeGoal App</h1>
-        </header>
-        <p className="App-intro"></p>
-
-        <div>
-          <Router>
-            <div>
-              <Navbar />
-              <div className="App">
-                <Route exact path="/" render={() => <Home /> } />
-                <Route path="/goals" render={() => <Goals /> } />
-                {/* <Route path="/login" render={() => <Login /> } /> */}
-                <Route path="/calendar" render={() => <Calendar /> } />
-              </div>
-            </div>
-          </Router>
-        </div>
-
-        <Goals />
-        <Calendar />
+      <div>
+        <Router>
+          <div className="App">
+            <Navbar />
+            <header className="App-header">
+            {/* <Menubar /> */}
+              <h1 className="App-title">SeeGoal App</h1>
+            </header>
+            <Route exact path="/" render={() => <Home /> } />
+            <Route path="/goals" render={() => <Goals /> } />
+            {/* <Route path="/login" render={() => <Login /> } /> */}
+            <Route path="/calendar" render={() => <Calendar /> } />
+          </div>
+        </Router>
       </div>
     );
   }
