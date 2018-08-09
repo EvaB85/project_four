@@ -4,6 +4,7 @@ import Route from 'react-router-dom/Route';
 import logo from './logo.svg';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import AppBar from '@material-ui/core/AppBar'
 import './App.css';
 import Calendar from './Calendar';
 import Goals from './Goals';
@@ -19,7 +20,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
         {/* <Menubar /> */}
-          <h1 className="App-title">My OnTrack Calendar App</h1>
+          <h1 className="App-title">SeeGoal App</h1>
         </header>
         <p className="App-intro"></p>
 
